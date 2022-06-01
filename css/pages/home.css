@@ -1,16 +1,105 @@
 /* base */
-@import "../base/base.css";
-@import "../base/layout.css";
+@import '../base/base.css';
+@import '../base/layout.css';
 
 /* 3rd-party */
-@import "../3rd-party/font-awesome.min.css";
+@import '../3rd-party/font-awesome.min.css';
 
-/* component */
-@import "../components/button.css";
-@import "../components/clock.css";
-@import "../components/form.css";
-@import "../components/mouse.css";
-@import "../components/progress-bar.css";
+/* components */
+@import '../components/button.css';
+@import '../components/clock.css';
+@import '../components/form.css';
+@import '../components/mouse.css';
+@import '../components/progress-bar.css';
 
-/* Custom style goes below this coment line */
+/* Custom style goes below this comment line */
 
+/* HERO - start */
+section.bg-main {
+    background-image: url(../../img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+.hero > .logo {
+    height: 60px;
+}
+.hero > .title {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.hero > .description {
+    font-size: 20px;
+}
+/* HERO - end */
+
+/* MAIN - start */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+.right-column {
+    width: 40%;
+}
+.section-title {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.section-description {
+    font-size: 18px;
+    color: #777;
+}
+.section-description > a {
+    color: red;
+    text-decoration: none;
+}
+.section-description > a:hover {
+    text-decoration: underline;
+}
+/* MAIN - end */
+
+/* FOOTER - start */
+footer.container {
+    padding-top: 0;
+}
+footer > .row {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    border-bottom: 2px solid #fff;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fffa;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.footer-bottom > .logo {
+    height: 60px;
+    margin: 40px 0;
+}
+.footer-bottom > .futeriukai {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.footer-bottom a {
+    color: #fff;
+}
+/* FOOTER - end */
